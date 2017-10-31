@@ -59,6 +59,7 @@ function getNewToken(groupId,reportId,res) {
 		    body: embedTokenbody
 		}, function (error, response, body){
 				if(!error) {
+					if(response.body)
 					multiKeyCache.set(['embedToken',groupId,reportId],response.body)
 					//multiKeyCache.delete(['embedToken',groupId,reportId])
 					//console.log("Sending reponse from new"+response.body)
