@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html class="no-js mdc-typography" lang="en">
+<head>  
+  <title>FDC Dashboards</title>
+  <link rel="icon" sizes="192x192" href="">
+  <link rel="shortcut icon" href="">
+
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta charset="utf-8">
+  <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+  <meta name="msapplication-tap-highlight" content="no">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i|Roboto+Mono:300,400,500|Product+Sans:300,400|Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <link rel="stylesheet" type="text/css" href="css/formStyle.css" />
+</head>
+<body>     
+   <div class="js-sticky-header header grid-container elevated search-snap snap">
+   <!-- <div class="js-sticky-header header grid-container elevated"> -->
+      <div class="">
+
+          <div class="header-logo ">
+            <div class="logo"></div>
+            <a href="/">FDC Dashboard</a>
+          </div>
+
+          
+          
+          <div class="drpDwnCont"><a href="javascript:fullscreen();">
+            <a href="javascript:fullscreen();"><img alt="Fullscreen" height="20px" src='images/fullscreen.png'/></a>
+          </div>
+          
+          <!--
+          <div class="drpDwnCont">
+            <div class="dropdown">
+              <button class="dropbtn">Delivery Date</button>
+              <div class="dropdown-content">
+                <a href="#">10/11/2017</a>
+                <a href="#">10/12/2017</a>
+                <a href="#">10/13/2017</a>
+              </div>
+            </div>
+          </div>
+        -->
+      </div>
+
+      <div class="header-content">
+         <nav class="header-nav" style="width:100%;height:35px;">
+            <ul>       
+                <li id='MainPage' class="js-nav-ripple header-nav-item--library active">
+                  <a href="javascript:embedReport('8e2d920d-06f5-44f6-b036-2e5beee90012','MainPage');">Main<div class="mdc-ripple-surface mdc-ripple-surface--primary ripple-underline"></div></a>
+                </li>
+              
+                <li class="js-nav-ripple header-nav-item--library">
+                  <a href="#">Order Queue<div class="mdc-ripple-surface mdc-ripple-surface--primary ripple-underline"></div></a>
+                </li>
+                <li class="js-nav-ripple header-nav-item--library">
+                  <a href="#">MailSlot<div class="mdc-ripple-surface mdc-ripple-surface--primary ripple-underline"></div></a>
+                </li>
+              
+                <li class="js-nav-ripple header-nav-item--library">
+                  <a href="#">Shuttle<div class="mdc-ripple-surface mdc-ripple-surface--primary ripple-underline"></div></a>
+                </li>
+              
+                <li class="js-nav-ripple header-nav-item--library">
+                  <a href="#">Ambient<div class="mdc-ripple-surface mdc-ripple-surface--primary ripple-underline"></div></a>
+                </li> 
+
+                <li class="js-nav-ripple header-nav-item--library">
+                  <a href="#">Fresh<div class="mdc-ripple-surface mdc-ripple-surface--primary ripple-underline"></div></a>
+                </li> 
+
+                <li id="Chill" class="js-nav-ripple header-nav-item--library">
+                  <a href="javascript:embedReport('86deea9b-138b-41dd-8f69-8c3d1f8543b6','Chill');">Chill<div class="mdc-ripple-surface mdc-ripple-surface--primary ripple-underline"></div></a>
+                </li>
+                <li class="js-nav-ripple header-nav-item--library">
+                  <a href="#">Case &amp; Freezer<div class="mdc-ripple-surface mdc-ripple-surface--primary ripple-underline"></div></a>
+                </li>   
+                <li class="js-nav-ripple header-nav-item--library">
+                  <a href="#">QC Mez<div class="mdc-ripple-surface mdc-ripple-surface--primary ripple-underline"></div></a>
+                </li> 
+                <li class="js-nav-ripple header-nav-item--library">
+                  <a href="#">Shipping &amp; Dock Door<div class="mdc-ripple-surface mdc-ripple-surface--primary ripple-underline"></div></a>
+                </li> 
+            </ul>
+          </nav>
+      </div>    
+   </div>
+
+   <div class="body-container">
+      <div class="article-page" style="margin-top:0rem;">
+        
+         <div class="article-page--header mdc-layout-grid__cell mdc-layout-grid__cell--span-10 about-page--header">
+          <!--
+            <div class="article-page--header-title">
+               <table width="100%" cellpadding="0" cellspacing="0" border="1px">
+                <tr>
+                   <td><h1>Welcome <b>John Appleseed</b></h1></td>
+                
+            
+                   <td align="right">
+                        <form>
+                          Selected Date : &nbsp;
+                          <input type="date" name="bdaymonth" class="form-control">
+                        </form>
+                   </td>
+                </tr> 
+               </table>      
+            </div>
+           --> 
+         </div>
+       
+
+          <!--
+            <div class="article-page--copy mdc-layout-grid__cell mdc-layout-grid__cell--span-12" style="margin-bottom:20px;padding-top:4px;">
+               <h1 class="news-post-info--hed" style="color:#669833;">Order Queue</h1>           
+            </div>
+           --> 
+            <div id="embedContainer">
+            </div> 
+       
+
+      </div>
+   </div>
+<script src="https://microsoft.github.io/PowerBI-JavaScript/demo/node_modules/jquery/dist/jquery.js"></script>
+<script src="https://microsoft.github.io/PowerBI-JavaScript/demo/node_modules/powerbi-client/dist/powerbi.js"></script>
+<script src="/javascripts/pbi.js"></script>
+<script type='text/javascript'>
+
+var gid="b1717488-1ca0-4f42-8da3-1fc7c1363833";
+
+$(document).ready(function() {
+  embedReport('8e2d920d-06f5-44f6-b036-2e5beee90012','MainPage');
+})
+</script>
+</body>
+</html>
