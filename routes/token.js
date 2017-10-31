@@ -37,7 +37,7 @@ else {
 
 function getNewToken(groupId,reportId,res) {
 	var requestBody = 'grant_type=password&client_id='+process.env.CLIENTID+'&username='+process.env.PBIUSERNAME+'&password='+process.env.PBIPASSWORD+'&resource=https://analysis.windows.net/powerbi/api'
-	res.send(requestBody)
+	//res.send(requestBody)
 	request({
 	    url: "https://login.microsoftonline.com/freshdirect.onmicrosoft.com/oauth2/token",
 	    method: "POST",
@@ -62,7 +62,7 @@ function getNewToken(groupId,reportId,res) {
 					multiKeyCache.set(['embedToken',groupId,reportId],response.body)
 					//multiKeyCache.delete(['embedToken',groupId,reportId])
 					//console.log("Sending reponse from new"+response.body)
-		    		//res.send(response.body);
+		    		res.send(response.body);
 		    	}
 			});
 	}
