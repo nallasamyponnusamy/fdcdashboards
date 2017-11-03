@@ -37,7 +37,7 @@ function embedReportAndSetTokenListener(reportId,groupId) {
 
   var embedContainer = $('#embedContainer')[0];
  
-    $.get( "/token/group/"+groupId+"/report/"+reportId).then(function( Token ) {
+    $.get( "/api/token/group/"+groupId+"/report/"+reportId).then(function( Token ) {
 
         var embedToken = JSON.parse(Token).token;
         
@@ -102,7 +102,7 @@ function setTokenExpirationListener(tokenExpiration,
 
 function updateToken(reportId, groupId) {
     // Generate new EmbedToken
-    $.get( "/token/group/"+groupId+"/report/"+reportId)
+    $.get( "/api/token/group/"+groupId+"/report/"+reportId)
     .then(function( Token ) {
         // Get a reference to the embedded report HTML element
         var embedContainer = $('#embedContainer')[0];

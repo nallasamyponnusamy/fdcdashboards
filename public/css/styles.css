@@ -8686,7 +8686,7 @@ p {
     line-height: 24px
 }
 .gd-item {
-    padding: 32px;
+    padding: 22px;
     float: left;
     transition: box-shadow .15s cubic-bezier(.4, 0, .2, 1);
     margin: 0

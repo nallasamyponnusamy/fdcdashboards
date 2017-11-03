@@ -7,7 +7,7 @@ var router = express.Router()
 
 
 
-router.get('/group/:gid/report/:rid', function(req, res, next) {
+router.get('/token/group/:gid/report/:rid', function(req, res, next) {
 
 
 if(multiKeyCache.has(['embedToken',req.params.gid,req.params.rid])) {
