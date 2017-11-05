@@ -6,7 +6,7 @@ var router = express.Router()
 
 router.use(function(req,res,next) {
  if (req.session.pbisession) {
-  		console.log("session  found")
+  		//console.log("session  found")
 		res.redirect('/dashboards')
   	}
   else next()
@@ -25,7 +25,7 @@ router.get('/token', function (req, res, next) {
 	else {
 	var requestBody = 'grant_type=authorization_code&client_id='+process.env.CLIENTID+'&code='+req.query.code+'&redirect_uri='+process.env.REDIRECTURI+'&resource=https://graph.windows.net'
 	
-	console.log(requestBody)
+	//console.log(requestBody)
 	//res.send(requestBody)
 	request({
 	    url: "https://login.microsoftonline.com/freshdirect.onmicrosoft.com/oauth2/token",

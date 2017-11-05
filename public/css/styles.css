@@ -1910,7 +1910,7 @@ fieldset:disabled .mdc-checkbox__native-control:indeterminate~.mdc-checkbox__bac
 [dir=rtl] .mdc-dialog .mdc-dialog__surface {
     text-align: right
 }
-.mdc-dialog__backdrop {
+.mdc-dialog__back {
     position: fixed;
     top: 0;
     left: 0;
@@ -7171,6 +7171,14 @@ select {
     width: 16.66%;
     padding: 0 32px
 }
+.header .header-name{
+    font-family: Segoe UI,Roboto Mono,Roboto, sans-serif;
+    font-weight: lighter;
+    float: right;
+    margin-top:10px;
+    min-height: 1px;
+    padding: 0 32px
+}
 @media screen and (max-width: 320px) {
     .header .header-logo,
     .header .header-search {
@@ -7507,6 +7515,10 @@ select {
 .header .header-logo .logo {
     background-image: url(../images/fd_logo_1.png);
     background-position: left center
+}
+.header .header-name .logout {
+    background-image: url(../images/logout.svg);
+    background-position: right center
 }
 @media screen and (min-width: 591px) and (max-width: 1150px) {
     .header .header-logo .logo {
