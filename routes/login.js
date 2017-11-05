@@ -19,10 +19,13 @@ router.get('/', function (req, res, next) {
 
 router.get('/token', function (req, res, next) {
 
-	//console.log("got the code"+req.query.code)
-	if(!req.query.code) req.render('error')	
-
+//	console.log("got the code"+req.query.code)
+	if(!req.query.code) 
+		res.redirect("login")	
+	else {
 	var requestBody = 'grant_type=authorization_code&client_id='+process.env.CLIENTID+'&code='+req.query.code+'&redirect_uri='+process.env.REDIRECTURI+'&resource=https://graph.windows.net'
+	
+	console.log(requestBody)
 	//res.send(requestBody)
 	request({
 	    url: "https://login.microsoftonline.com/freshdirect.onmicrosoft.com/oauth2/token",
@@ -48,11 +51,12 @@ router.get('/token', function (req, res, next) {
 						req.session.userName=JSON.parse(response.body).displayName
 					res.redirect("/")
 		    	}
-		    	else res.render("error")
+		    	else res.redirect("login")
 			});
 	}
-	else res.render('error')
+	else res.redirect("login")
 	});
+}
 });
 
 

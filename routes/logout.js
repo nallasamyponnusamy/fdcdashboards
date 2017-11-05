@@ -5,7 +5,7 @@ var router = express.Router()
 
 router.use(function(req,res,next) {
   req.session.destroy()
-  res.redirect('/login')
+  res.redirect('https://login.windows.net/common/oauth2/logout?post_logout_redirect_uri='+process.env.REDIRECTURI)
  
 });
 
