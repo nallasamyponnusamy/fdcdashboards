@@ -119,9 +119,7 @@ function updateToken(reportId, groupId) {
     });
 }
 
-function embedReport(reportId,element){
- $("li").removeClass("active");
- $("#"+element).addClass("active");
+function embedReport(reportId,gid){
  embedReportAndSetTokenListener(reportId,gid) 
 }
 

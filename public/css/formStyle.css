@@ -459,3 +459,5 @@ fieldset {
     transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
     font-family: Roboto;
 }
+a .material-icons{color:gray;}
+a .material-icons:hover{color:#669833;text-decoration: none;}

@@ -1,24 +1,20 @@
 <div class="js-sticky-header header grid-container elevated search-snap snap">
    <!-- <div class="js-sticky-header header grid-container elevated"> -->
-      <div class="">
-          <div class="header-logo ">
-            <div class="logo"></div>
-            <a href="/">Dashboard Home</a>
-          </div>
-
-          <div class="header-name">
-            <table  >
-                <tr >
-                  <td  cellpadding="50" cellspacing="100" style="vertical-align: middle;">
-                  <span style="margin-right:15px;">{{userName}}</span>               
-                 </td>
-                  <td>
-                  <img src="/images/logout.svg" alt="Logout" height="25px" />
-                  </td>
-                </tr>
-              </table>
-          </div>
-
+      <div style="padding-top:5px; padding-bottom:5px;padding-left:20px;padding-right:20px">
+          <table width="100%" cellpadding="0" cellspacing="0">
+            <tr>
+              <td align="left" width="1px"><img src="/images/logo_small.png" height="30px" /></td>
+              <td width="45px"><a href="/"><i title="Home" class="material-icons" title="Home">home</i></a></td>
+              <td align="right" style="vertical-align:middle;">  
+                <div style="padding-top:4px; color:#669833;">{{userName}}</div>  
+              </td>
+              <td align="right" width="85px">  
+                <a href="#"><i class="material-icons">account_circle</i></a>
+                <a href="/logout"><i title="Logout" class="material-icons" title="Logout">power_settings_new</i></a>
+                <a href="javascript:window.fullscreen();"><i title="Fullscreen" class="material-icons" title="Fullscreen">launch</i></a>
+              </td>
+            </tr>
+          </table>
       </div>
 
       <div class="header-content">
@@ -79,7 +75,7 @@
 
 
             <li class="resource small-tile gd-item mdc-layout-grid__cell mdc-layout-grid__cell--span-3 mdc-layout-grid__cell--span-4-tablet js-grid-item js-resource">  
-              <a href="dashboards/buffermonitor">
+              <a href="report/buffermonitor/mainpage">
               <div class="resource--content">
                 <div class="resource--content-border" style="border-color:#009DE8"></div>
                 <div class="resource--content-headline">Buffer Monitor</div>
