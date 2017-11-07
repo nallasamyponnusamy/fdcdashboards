@@ -60,7 +60,7 @@ function embedReportAndSetTokenListener(reportId,groupId) {
            // console.log("Clearning interval"+intervalId);
             clearInterval(intervalId);
             //console.log("Setting new interval");
-            intervalId=setInterval(function(){ report.refresh() }, 40000);  
+            intervalId=setInterval(function(){ report.refresh() }, 60000);  
             
             setTokenExpirationListener(JSON.parse(Token).expiration,
             2 /*minutes before expiration*/, 
