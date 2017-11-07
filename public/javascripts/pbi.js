@@ -1,6 +1,6 @@
 
-//$('#embedContainer').width($('#embedContainer').width()-2)
-$('#embedContainer').height($('#embedContainer').width()*.475)
+$('#embedContainer').height($(window).height()*.87)
+//$('#embedContainer').height($('#embedContainer').width()*.475)
 
 
 
