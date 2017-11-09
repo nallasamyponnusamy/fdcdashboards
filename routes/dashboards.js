@@ -29,7 +29,7 @@ router.get('/dtp', function (req, res, next) {
 
 router.get('/report/:reportName/:pageName', function (req, res, next) {
 
-console.log(req.params.reportName+req.params.pageName)
+//console.log(req.params.reportName+req.params.pageName)
 	if(reportList[req.params.reportName][req.params.pageName]) {
 				res.render('report',{
     					userName:req.session.userName,

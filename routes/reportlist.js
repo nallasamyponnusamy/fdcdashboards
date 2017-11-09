@@ -18,7 +18,7 @@ var reportList =
 		    },
 		    mailslot:{
 		      id: 'mailslot',
-		      rid: '123',
+		      rid: '91ee18cc-8301-4d93-b801-d0535332c3e9',
 		      name: 'Mail Slot'
 		    },
 		    ambient:{
@@ -43,12 +43,12 @@ var reportList =
 		    },
 		    shipfloor:{
 		      id: 'shipfloor',
-		      rid: '8e2d920d-06f5-44f6-b036-2e5beee90012',
+		      rid: 'b2f21019-7dda-4b0e-aed1-16eba6b1b021',
 		      name: 'Ship Floor'
 		    },
 		    dockdoor:{
 		      id: 'dockdoor',
-		      rid: '8e2d920d-06f5-44f6-b036-2e5beee90012',
+		      rid: '4c477360-5366-45a5-b968-feec1ed9a90e',
 		      name: 'Dock Door'
 		    }
 	  }
