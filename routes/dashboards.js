@@ -11,25 +11,14 @@ router.get('/', function (req, res, next) {
 	res.redirect('/dashboards/pts')
 });
 
-router.get('/pts', function (req, res, next) {
-	res.render('pts',{userName:req.session.userName});
+router.get('/:stream', function (req, res, next) {
+	res.render(req.params.stream,{userName:req.session.userName});
 });
 
-router.get('/rtr', function (req, res, next) {
-	res.render('pts',{userName:req.session.userName});
-});
 
-router.get('/mtc', function (req, res, next) {
-	res.render('pts',{userName:req.session.userName});
-});
+router.get('/:stream/:reportName/:pageName', function (req, res, next) {
 
-router.get('/dtp', function (req, res, next) {
-	res.render('pts',{userName:req.session.userName});
-});
-
-router.get('/report/:reportName/:pageName', function (req, res, next) {
-
-//console.log(req.params.reportName+req.params.pageName)
+console.log(req.params.stream+req.params.pageName)
 	if(reportList[req.params.reportName][req.params.pageName]) {
 				res.render('report',{
     					userName:req.session.userName,
@@ -37,7 +26,9 @@ router.get('/report/:reportName/:pageName', function (req, res, next) {
     					gid:'b1717488-1ca0-4f42-8da3-1fc7c1363833',
     					rid:reportList[req.params.reportName][req.params.pageName].rid,
     					activePage:req.params.pageName,
-    					pageList:reportList[req.params.reportName]
+    					pageList:reportList[req.params.reportName],
+    					backPage:req.params.stream,
+    					refreshFreq:reportList[req.params.reportName][req.params.pageName].refresh,
     				});
 			}
 			else res.render("error",{errorMsg:'Report Name/Page not found'})

@@ -51,6 +51,21 @@ var reportList =
 		      rid: '4c477360-5366-45a5-b968-feec1ed9a90e',
 		      name: 'Dock Door'
 		    }
+	  },
+	shipexceptions: {
+	  	shipexceptions:{
+	  		id: 'shipexceptions',
+	  		rid: 'e6f8ef8a-68e4-404b-a2be-1809e5b05e76',
+	  		name: 'Ship Exceptions'
+	  	}
+	},
+	inboundopenpallets: {
+	  	inboundopenpallets:{
+	  		id: 'inboundopenpallets',
+	  		rid: '8716b7ea-4baa-437f-bad3-95d7f8af8fc5',
+	  		name: 'Inbound Open Pallets',
+	  		refresh: 30
+	  	}
 	  }
 }
 				
