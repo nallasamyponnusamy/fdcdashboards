@@ -66,6 +66,22 @@ var reportList =
 	  		name: 'Inbound Open Pallets',
 	  		refresh: 30
 	  	}
+	  },
+	binfillrate: {
+	  	binfillrate:{
+	  		id: 'binfillrate',
+	  		rid: 'e46b2373-196a-453d-b7bd-8b694beaabb4',
+	  		name: 'Bin Fill Rate',
+	  		refresh: 30
+	  	}
+	  },
+	openreplentasks: {
+	  	openreplentasks:{
+	  		id: 'binfillrate',
+	  		rid: '1e4874f3-ac81-4f0f-ab78-e5e1097947cb',
+	  		name: 'Open Replen Tasks',
+	  		refresh: 30
+	  	}
 	  }
 }
 				
