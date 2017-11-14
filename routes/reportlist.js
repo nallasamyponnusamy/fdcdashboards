@@ -82,6 +82,39 @@ var reportList =
 	  		name: 'Open Replen Tasks',
 	  		refresh: 30
 	  	}
+	  },
+	transportationdss: {
+	  	lateboxes:{
+	  		id: 'lateboxes',
+	  		rid: '708f24e6-a672-4de9-a529-9f025dc1ecdb',
+	  		name: 'Late Boxes',
+	  		refresh: 30
+	  	},
+	  	plantdispatch:{
+	  		id: 'plantdispatch',
+	  		rid: 'c89fa47f-5e99-45b8-a608-d0f15583a28e',
+	  		name: 'Plant Dispatch',
+	  		refresh: 30
+	  	},
+	  	undeliveredboxes:{
+	  		id: 'undeliveredboxes',
+	  		rid: 'd64c0d1c-c120-4ffb-a554-805fc22cc878',
+	  		name: 'Undelivered Boxes',
+	  		refresh: 30
+	  	},
+	  	opscenter:{
+	  		id: 'opscenter',
+	  		rid: '7e0d63cb-a498-4ddb-86a9-cf05d7227c25',
+	  		name: 'Ops Center',
+	  		refresh: 30
+	  	},
+	  	transportationdispatch:{
+	  		id: 'transportationdispatch',
+	  		rid: 'd044cceb-5220-40be-b06d-e2d106323ced',
+	  		name: 'Transportation Dispatch',
+	  		refresh: 30
+	  	}
+	  	
 	  }
 }
 				
