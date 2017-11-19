@@ -21,7 +21,22 @@ function createConfig(embedToken,reportId,groupId) {
     permissions:permissions,
     settings: {
           filterPaneEnabled: false,
-          navContentPaneEnabled: false
+          navContentPaneEnabled: false,
+          extensions: [
+            {
+                command: {
+                    name: "copy",
+                    title: "copy",
+                    icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEU...AAABJRU5ErkJggg==",
+                    extend:
+                    {
+                        visualContextMenu: {
+                            title: "Copy Key Value",
+                        }
+                    }
+                }
+            }
+        ]
       },
     accessToken: embedToken
   };
@@ -67,6 +82,27 @@ function embedReportAndSetTokenListener(reportId,groupId) {
             reportId, 
             groupId);
         });
+
+        report.on("commandTriggered", function(command) {
+            try {
+           // console.log(command.detail.dataPoints[0].identity[0].equals);
+              var dummy = document.createElement("input");
+              // Add it to the document
+              document.body.appendChild(dummy);
+              // Set its ID
+              dummy.setAttribute("id", "dummy_id");
+              // Output the array into it  
+              document.getElementById("dummy_id").value=command.detail.dataPoints[0].identity[0].equals;  
+              // Select it
+              dummy.select();
+              // Copy its contents
+              document.execCommand("copy");
+              // Remove it as its not needed anymore
+              document.body.removeChild(dummy);
+          }
+          catch(err) {}
+        });
+
     });
 }
 

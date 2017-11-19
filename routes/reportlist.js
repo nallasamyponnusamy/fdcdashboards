@@ -130,6 +130,14 @@ var reportList =
 	  		name: 'Start Of Production',
 	  		refresh: 30
 	  	}
+	  },
+	  pendingpicks: {
+	  	pendingpicks:{
+	  		id: 'pendingpicks',
+	  		rid: '5220edda-128e-44c2-9d6d-6a2012ded56f',
+	  		name: 'Start Of Production',
+	  		refresh: 30
+	  	}
 	  }
 }
 				
