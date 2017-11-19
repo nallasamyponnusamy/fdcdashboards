@@ -5,6 +5,7 @@ var logger = require('morgan');
 var bodyParser = require('body-parser');
 var exphbs  = require('express-handlebars');
 var session = require('express-session')
+var compression = require('compression')
 
 //var index = require('./routes/index');
 
@@ -16,7 +17,7 @@ var logout = require('./routes/logout');
 
 
 var app = express();
-
+app.use(compression())
 // view engine setup
 app.engine('handlebars', exphbs({
     defaultLayout: 'main'

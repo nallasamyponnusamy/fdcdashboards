@@ -114,7 +114,22 @@ var reportList =
 	  		name: 'Transportation Dispatch',
 	  		refresh: 30
 	  	}
-	  	
+	  },
+	  postwavemonitor: {
+	  	postwavemonitor:{
+	  		id: 'postwavemonitor',
+	  		rid: 'bc184bbb-bf69-490a-8b78-82a88a2f3343',
+	  		name: 'Post Wave Monitor',
+	  		refresh: 30
+	  	}
+	  },
+	  startofproduction: {
+	  	startofproduction:{
+	  		id: 'startofproduction',
+	  		rid: 'ffc4834b-9251-46b0-aa5f-1e9530660070',
+	  		name: 'Start Of Production',
+	  		refresh: 30
+	  	}
 	  }
 }
 				

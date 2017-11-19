@@ -8,13 +8,12 @@ var router = express.Router()
 
 
 router.get('/', function (req, res, next) {
-	res.redirect('/dashboards/pts')
+	res.redirect('/dashboards/rtr')
 });
 
 router.get('/:stream', function (req, res, next) {
 	res.render(req.params.stream,{userName:req.session.userName});
 });
-
 
 router.get('/:stream/:reportName/:pageName', function (req, res, next) {
 
