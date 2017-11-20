@@ -19,17 +19,17 @@ if(multiKeyCache.has(['embedToken',req.params.gid,req.params.rid])) {
     var timeout = expiration - currentTime - 10*60*1000;
 
  	if (timeout>0) {
- 		console.log("Sending reponse from cache")
+ 		//console.log("Sending reponse from cache")
  		res.send(embedTokenResponse);
  	}
  	else {
- 		console.log("Cache exprired - Getting New token")
+ 		//console.log("Cache exprired - Getting New token")
  		getNewToken(req.params.gid,req.params.rid,res)
  	}
 
 }
 else {
-	console.log("Cache not found - Getting New token")
+	//console.log("Cache not found - Getting New token")
 	getNewToken(req.params.gid,req.params.rid,res)
  }
   

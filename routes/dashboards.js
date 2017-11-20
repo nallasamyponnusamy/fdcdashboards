@@ -17,7 +17,7 @@ router.get('/:stream', function (req, res, next) {
 
 router.get('/:stream/:reportName/:pageName', function (req, res, next) {
 
-console.log(req.params.stream+req.params.pageName)
+//console.log(req.params.stream+req.params.pageName)
 	if(reportList[req.params.reportName][req.params.pageName]) {
 				res.render('report',{
     					userName:req.session.userName,

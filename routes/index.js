@@ -3,7 +3,10 @@ var exphbs  = require('express-handlebars');
 var router = express.Router()
 
 router.get('/', function (req, res, next) {
-    res.redirect('/dashboards');
+	if(req.query.state)
+    	res.redirect(req.query.state);
+	else
+		res.redirect('/dashboards');
 });
 
 

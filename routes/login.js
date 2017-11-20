@@ -5,21 +5,24 @@ var router = express.Router()
 
 
 router.use(function(req,res,next) {
- if (req.session.pbisession) {
-  		//console.log("session  found")
+ if (req.session.pbisession)
+ 	if(req.query.state)
+		res.redirect(req.query.state)
+	else
 		res.redirect('/dashboards')
-  	}
   else next()
 });
 
 
 router.get('/', function (req, res, next) {
-	res.redirect('https://login.microsoftonline.com/freshdirect.onmicrosoft.com/oauth2/authorize?client_id='+process.env.CLIENTID+'&response_type=code&redirect_uri='+process.env.REDIRECTURI+'&response_mode=query&state=12345')
+	if(req.query.state)
+		res.redirect('https://login.microsoftonline.com/freshdirect.onmicrosoft.com/oauth2/authorize?client_id='+process.env.CLIENTID+'&response_type=code&redirect_uri='+process.env.REDIRECTURI+'&response_mode=query&state='+req.query.state)
+	else
+		res.redirect('https://login.microsoftonline.com/freshdirect.onmicrosoft.com/oauth2/authorize?client_id='+process.env.CLIENTID+'&response_type=code&redirect_uri='+process.env.REDIRECTURI+'&response_mode=query&state='+'/dashboards')	
 });
 
 router.get('/token', function (req, res, next) {
 
-//	console.log("got the code"+req.query.code)
 	if(!req.query.code) 
 		res.redirect("login")	
 	else {
@@ -49,7 +52,7 @@ router.get('/token', function (req, res, next) {
 					if(JSON.parse(response.body).objectId)
 						req.session.pbisession=JSON.parse(response.body).objectId
 						req.session.userName=JSON.parse(response.body).displayName
-					res.redirect("/")
+					res.redirect("/?state="+req.query.state)
 		    	}
 		    	else res.redirect("login")
 			});

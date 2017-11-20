@@ -55,7 +55,7 @@ app.use(session({
 app.use('/login', login)
 app.use(function(req,res,next) {
  if (!req.session.pbisession && req.url!="/login" && req.url!="/login/token")
- 	res.redirect('/login')
+ 	res.redirect('/login?state='+req.originalUrl)
   else 
   	next()
 });

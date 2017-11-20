@@ -138,6 +138,14 @@ var reportList =
 	  		name: 'Start Of Production',
 	  		refresh: 30
 	  	}
+	  },
+	  prewavemonitor: {
+	  	prewavemonitor:{
+	  		id: 'prewavemonitor',
+	  		rid: '7bf95e7c-d60d-4022-8962-a81c6e94fc58',
+	  		name: 'Pre-wave Monitor',
+	  		refresh: 30
+	  	}
 	  }
 }
 				
