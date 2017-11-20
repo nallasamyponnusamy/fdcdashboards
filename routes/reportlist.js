@@ -154,6 +154,14 @@ var reportList =
 	  		name: 'Intraday Operations',
 	  		refresh: 30
 	  	}
+	  },
+	  remakerequirements: {
+	  	remakerequirements:{
+	  		id: 'remakerequirements',
+	  		rid: 'f0a70cd1-dc41-468c-9866-56a0ac12e445',
+	  		name: 'Remake Requirements',
+	  		refresh: 30
+	  	}
 	  }
 }
 				
