@@ -146,6 +146,14 @@ var reportList =
 	  		name: 'Pre-wave Monitor',
 	  		refresh: 30
 	  	}
+	  },
+	  intradayoperations: {
+	  	intradayoperations:{
+	  		id: 'intradayoperations',
+	  		rid: '7defe7aa-1a2a-405a-bff7-2fb8acf34564',
+	  		name: 'Intraday Operations',
+	  		refresh: 30
+	  	}
 	  }
 }
 				
