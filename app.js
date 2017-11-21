@@ -7,6 +7,10 @@ var exphbs  = require('express-handlebars');
 var session = require('express-session')
 var compression = require('compression')
 
+//Azure application insights
+const appInsights = require('applicationinsights');
+appInsights.setup('77e65bd5-272f-4561-9a8c-a7ef4ebbaf26').start();
+
 //var index = require('./routes/index');
 
 var api = require('./routes/api');

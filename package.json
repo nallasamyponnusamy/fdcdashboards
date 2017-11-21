@@ -6,6 +6,7 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
+    "applicationinsights": "^1.0.0",
     "body-parser": "~1.18.2",
     "compression": "^1.7.1",
     "debug": "^2.6.9",
