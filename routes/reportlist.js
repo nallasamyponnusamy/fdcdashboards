@@ -162,6 +162,14 @@ var reportList =
 	  		name: 'Remake Requirements',
 	  		refresh: 30
 	  	}
+	  },
+	  prodwavemonitor: {
+	  	prodwavemonitor:{
+	  		id: 'prodwavemonitor',
+	  		rid: '76505246-b574-4a28-9f03-60b2911a7023',
+	  		name: 'Prod Wave Monitor',
+	  		refresh: 30
+	  	}
 	  }
 }
 				
