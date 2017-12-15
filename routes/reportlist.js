@@ -83,6 +83,38 @@ var reportList =
 	  		refresh: 30
 	  	}
 	  },
+	transportationdsslic: {
+	  	notloaded:{
+	  		id: 'notloaded',
+	  		rid: '49c0af6d-7903-4430-8bf0-c1ab494be0cf',
+	  		name: 'Not Loaded',
+	  		refresh: 30
+	  	},
+	  	plantscorecard:{
+	  		id: 'plantscorecard',
+	  		rid: 'b60ee07d-f257-4aac-b341-5db2f13e67f6',
+	  		name: 'Plant Scorecard',
+	  		refresh: 30
+	  	},
+	  	dispatch:{
+	  		id: 'dispatch',
+	  		rid: '697d9583-a0c4-4c64-9262-4d1095726311',
+	  		name: 'Dispatch',
+	  		refresh: 30
+	  	},
+	  	undeliveredboxes:{
+	  		id: 'undeliveredboxes',
+	  		rid: 'db69c2ec-e3dc-4b18-8c12-814c1bd53f12',
+	  		name: 'Undelivered Boxes',
+	  		refresh: 30
+	  	},
+	  	opscenter:{
+	  		id: 'opscenter',
+	  		rid: '23ab3b2b-e94f-4e5b-ab41-b59e174c3b8a',
+	  		name: 'Ops Center',
+	  		refresh: 30
+	  	}
+	  },
 	transportationdss: {
 	  	lateboxes:{
 	  		id: 'lateboxes',
