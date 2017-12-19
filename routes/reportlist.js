@@ -153,6 +153,12 @@ var reportList =
 	  		rid: '0ec58d2a-edfa-4c3f-a5da-85d84e4e7343',
 	  		name: 'Split Screen',
 	  		refresh: 30
+	  	},
+	    cartbuildingsingle:{
+	  		id: 'cartbuildingsingle',
+	  		rid: 'd3d4104a-ca63-4b4f-a252-3e04c537c510',
+	  		name: 'Single Screen (Crossdock)',
+	  		refresh: 30
 	  	}
 	  },
 	  postwavemonitor: {
