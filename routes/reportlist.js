@@ -147,6 +147,14 @@ var reportList =
 	  		refresh: 30
 	  	}
 	  },
+	  cartbuilding: {
+	  	cartbuildingsplit:{
+	  		id: 'cartbuildingsplit',
+	  		rid: '0ec58d2a-edfa-4c3f-a5da-85d84e4e7343',
+	  		name: 'Split Screen',
+	  		refresh: 30
+	  	}
+	  },
 	  postwavemonitor: {
 	  	postwavemonitor:{
 	  		id: 'postwavemonitor',
