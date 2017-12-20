@@ -48,6 +48,14 @@
 
 <script type='text/javascript'>
 
+var refreshFreq = {{refreshFreq}}; 
+console.log("Auto refresh : " + refreshFreq);
+
+var navBar = {{navBar}};
+
+console.log("NavBar : " + navBar);
+
+
   $(document).ready(function() {
     $("#{{activePage}}").addClass("active");
     embedReport('{{rid}}','{{gid}}');

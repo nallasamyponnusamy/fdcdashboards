@@ -21,7 +21,7 @@ function createConfig(embedToken,reportId,groupId) {
     permissions:permissions,
     settings: {
           filterPaneEnabled: false,
-          navContentPaneEnabled: false,
+          navContentPaneEnabled: navBar,
           extensions: [
             {
                 command: {
@@ -72,10 +72,14 @@ function embedReportAndSetTokenListener(reportId,groupId) {
 
         // Report.on will add an event handler which prints to Log window.
         report.on("loaded", function() {
+
+           if(refreshFreq>0) {
            // console.log("Clearning interval"+intervalId);
             clearInterval(intervalId);
             //console.log("Setting new interval");
-            intervalId=setInterval(function(){ report.refresh() }, 60000);  
+            intervalId=setInterval(function(){ report.refresh() }, refreshFreq*1000);  
+
+          }
             
             setTokenExpirationListener(JSON.parse(Token).expiration,
             2 /*minutes before expiration*/, 

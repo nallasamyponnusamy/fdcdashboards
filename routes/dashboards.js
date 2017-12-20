@@ -27,7 +27,8 @@ router.get('/:stream/:reportName/:pageName', function (req, res, next) {
     					activePage:req.params.pageName,
     					pageList:reportList[req.params.reportName],
     					backPage:req.params.stream,
-    					refreshFreq:reportList[req.params.reportName][req.params.pageName].refresh,
+    					refreshFreq:reportList[req.params.reportName][req.params.pageName].refresh||0,
+                        navBar:reportList[req.params.reportName][req.params.pageName].navBar||false,
     				});
 			}
 			else res.render("error",{errorMsg:'Report Name/Page not found'})
