@@ -161,6 +161,14 @@ var reportList =
 	  		refresh: 30
 	  	}
 	  },
+	  eodrecon: {
+	  	eodrecondivertcartbuild:{
+	  		id: 'eodrecondivertcartbuild',
+	  		rid: '0b8d6ea4-b931-47e2-ac1f-cc5202764f7d',
+	  		name: 'Divert & Cart Build',
+	  		refresh: 30
+	  	}
+	  },
 	  postwavemonitor: {
 	  	postwavemonitor:{
 	  		id: 'postwavemonitor',
