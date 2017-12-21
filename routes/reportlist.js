@@ -68,6 +68,7 @@ var reportList =
 		    shipfloor:{
 		      id: 'shipfloor',
 		      rid: 'b2f21019-7dda-4b0e-aed1-16eba6b1b021',
+		      gid: 'b1717488-1ca0-4f42-8da3-1fc7c1363833',
 		      name: 'Ship Floor',
 		      refresh: 60,
 		      navBar: false
