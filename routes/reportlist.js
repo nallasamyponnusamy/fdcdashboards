@@ -228,7 +228,7 @@ var reportList =
 	  		id: 'eodrecondivertcartbuild',
 	  		rid: '0c7d14fd-9873-46cf-9a77-42343d1eaecd',
 	  		gid: 'c7e961f3-590f-450c-9768-58667bc89d30',
-	  		name: 'EOD Reconciliation",
+	  		name: 'EOD Reconciliation',
 	  		refresh: 0,
 	  		navBar: true
 	  	},
