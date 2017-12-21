@@ -22,7 +22,7 @@ router.get('/:stream/:reportName/:pageName', function (req, res, next) {
 				res.render('report',{
     					userName:req.session.userName,
     					reportName:req.session.reportName,
-    					gid:'b1717488-1ca0-4f42-8da3-1fc7c1363833',
+    					gid:reportList[req.params.reportName][req.params.pageName].gid,
     					rid:reportList[req.params.reportName][req.params.pageName].rid,
     					activePage:req.params.pageName,
     					pageList:reportList[req.params.reportName],
