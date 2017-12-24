@@ -209,7 +209,7 @@ var reportList =
 	  cartbuilding: {
 	  	cartbuildingsplit:{
 	  		id: 'cartbuildingsplit',
-	  		rid: '0ec58d2a-edfa-4c3f-a5da-85d84e4e7343',
+	  		rid: '849d356b-e4a1-46e2-9ae1-1b4e0a8f21dc',
 	  		gid: 'b1717488-1ca0-4f42-8da3-1fc7c1363833',
 	  		name: 'Split Screen',
 	  		refresh: 60,
