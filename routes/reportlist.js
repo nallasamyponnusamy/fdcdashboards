@@ -192,6 +192,7 @@ var reportList =
 	  	opscenter:{
 	  		id: 'opscenter',
 	  		rid: '7e0d63cb-a498-4ddb-86a9-cf05d7227c25',
+	  		gid: 'b1717488-1ca0-4f42-8da3-1fc7c1363833',
 	  		name: 'Ops Center',
 	  		refresh: 60,
 	  		navBar: false
@@ -226,7 +227,7 @@ var reportList =
 	  eodrecon: {
 	  	eodrecondivertcartbuild:{
 	  		id: 'eodrecondivertcartbuild',
-	  		rid: '0c7d14fd-9873-46cf-9a77-42343d1eaecd',
+	  		rid: '194a9ff2-ec96-4e28-bd66-3dfeb2cec196',
 	  		gid: 'c7e961f3-590f-450c-9768-58667bc89d30',
 	  		name: 'EOD Reconciliation',
 	  		refresh: 0,
@@ -234,7 +235,7 @@ var reportList =
 	  	},
 	  	eodfourpmrecon:{
 	  		id: 'eodfourpmrecon',
-	  		rid: 'baf6bfcb-cbb2-43a1-84da-c1e1ea69afcf',
+	  		rid: 'bc8d566e-4afd-4f4b-ac78-6ec2f4da1ea3',
 	  		gid: 'c7e961f3-590f-450c-9768-58667bc89d30',
 	  		name: '4pm Recon',
 	  		refresh: 0,
