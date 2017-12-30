@@ -7325,7 +7325,7 @@ select {
 .header-nav li {
     float: left;
     margin: 0 .5625rem;
-    padding: 0 .75rem;
+    padding: 0 .60rem;
     height: 100%;
     border-bottom-width: 0;
     transition: border-bottom-width .1s cubic-bezier(.4, 0, .2, 1);

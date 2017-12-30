@@ -5,7 +5,7 @@ var reportList =
 		      id: 'dispatchmonitor',
 		      rid: 'f837b929-4504-4709-a8ad-c05e05b281a7',
 		      gid: 'b1717488-1ca0-4f42-8da3-1fc7c1363833',
-		      name: 'Dispatch Monitor',
+		      name: 'Dispatch',
 		      refresh: 90,
 		      navBar: false
 		    },
@@ -29,7 +29,7 @@ var reportList =
 		      id: 'mailslot',
 		      rid: '91ee18cc-8301-4d93-b801-d0535332c3e9',
 		      gid: 'b1717488-1ca0-4f42-8da3-1fc7c1363833',
-		      name: 'Mail Slot',
+		      name: 'MailSlot',
 		      refresh: 90,
 		      navBar: false
 		    },
@@ -57,6 +57,14 @@ var reportList =
 		      refresh: 90,
 		      navBar: false
 		    },
+		    case:{
+		      id: 'case',
+		      rid: '2b142a84-bb15-4685-adf2-4165bb85b184',
+		      gid: 'b1717488-1ca0-4f42-8da3-1fc7c1363833',
+		      name: 'Case',
+		      refresh: 90,
+		      navBar: false
+		    },
 		    qcmezz:{
 		      id: 'qcmezz',
 		      rid: '55880244-0603-4759-886b-43522a51c33d',
@@ -77,7 +85,7 @@ var reportList =
 		      id: 'dockdoor',
 		      rid: '4c477360-5366-45a5-b968-feec1ed9a90e',
 		      gid: 'b1717488-1ca0-4f42-8da3-1fc7c1363833',
-		      name: 'Dock Door',
+		      name: 'Loading',
 		      refresh: 90,
 		      navBar: false
 		    }
