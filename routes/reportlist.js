@@ -65,6 +65,14 @@ var reportList =
 		      refresh: 90,
 		      navBar: false
 		    },
+		    freezer:{
+		      id: 'freezer',
+		      rid: '646bd0f6-6cbe-4216-ac40-606e83da94d1',
+		      gid: 'b1717488-1ca0-4f42-8da3-1fc7c1363833',
+		      name: 'Freezer',
+		      refresh: 90,
+		      navBar: false
+		    },
 		    qcmezz:{
 		      id: 'qcmezz',
 		      rid: '55880244-0603-4759-886b-43522a51c33d',
@@ -122,7 +130,7 @@ var reportList =
 	  },
 	openreplentasks: {
 	  	openreplentasks:{
-	  		id: 'openpreplentasks',
+	  		id: 'openreplentasks',
 	  		rid: '1e4874f3-ac81-4f0f-ab78-e5e1097947cb',
 	  		gid: 'b1717488-1ca0-4f42-8da3-1fc7c1363833',
 	  		name: 'Open Replen Tasks',
