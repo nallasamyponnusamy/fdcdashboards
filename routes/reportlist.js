@@ -1,6 +1,6 @@
 var reportList = 
 {
-  buffermonitor: {
+  ptsoutbound: {
 		    dispatchmonitor:{
 		      id: 'dispatchmonitor',
 		      rid: 'f837b929-4504-4709-a8ad-c05e05b281a7',
