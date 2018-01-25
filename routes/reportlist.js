@@ -225,7 +225,7 @@ var reportList =
 	  cartbuilding: {
 	  	cartbuildingsplit:{
 	  		id: 'cartbuildingsplit',
-	  		rid: '849d356b-e4a1-46e2-9ae1-1b4e0a8f21dc',
+	  		rid: 'a997dc8c-8724-4887-b168-4cfd183f4c1f',
 	  		gid: 'b1717488-1ca0-4f42-8da3-1fc7c1363833',
 	  		name: 'Split Screen',
 	  		refresh: 60,
@@ -233,9 +233,25 @@ var reportList =
 	  	},
 	    cartbuildingsingle:{
 	  		id: 'cartbuildingsingle',
-	  		rid: 'd3d4104a-ca63-4b4f-a252-3e04c537c510',
+	  		rid: '6a0fa1a3-1830-47b4-8368-1908bea23358',
 	  		gid: 'b1717488-1ca0-4f42-8da3-1fc7c1363833',
 	  		name: 'Single Screen (Crossdock)',
+	  		refresh: 60,
+	  		navBar: false
+	  	},
+	  	cartbuildingsplitold:{
+	  		id: 'cartbuildingsplitold',
+	  		rid: '849d356b-e4a1-46e2-9ae1-1b4e0a8f21dc',
+	  		gid: 'b1717488-1ca0-4f42-8da3-1fc7c1363833',
+	  		name: 'Old - Split Screen',
+	  		refresh: 60,
+	  		navBar: false
+	  	},
+	    cartbuildingsingleold:{
+	  		id: 'cartbuildingsingleold',
+	  		rid: 'd3d4104a-ca63-4b4f-a252-3e04c537c510',
+	  		gid: 'b1717488-1ca0-4f42-8da3-1fc7c1363833',
+	  		name: 'Old - Single Screen (Crossdock)',
 	  		refresh: 60,
 	  		navBar: false
 	  	}
