@@ -257,6 +257,14 @@ var reportList =
 	  	}
 	  },
 	  eodrecon: {
+	  sapeodrecon:{
+	  		id: 'sapeodrecon',
+	  		rid: 'a1d8aa85-a69b-4823-90dd-be1370ee6e7b',
+	  		gid: 'c7e961f3-590f-450c-9768-58667bc89d30',
+	  		name: 'SAP Reconciliation',
+	  		refresh: 0,
+	  		navBar: false
+	  	},
 	  	eodrecondivertcartbuild:{
 	  		id: 'eodrecondivertcartbuild',
 	  		rid: '194a9ff2-ec96-4e28-bd66-3dfeb2cec196',
