@@ -238,7 +238,8 @@ var reportList =
 	  		name: 'Single Screen (Crossdock)',
 	  		refresh: 60,
 	  		navBar: false
-	  	},
+	  	}
+/*	  	
 	  	cartbuildingsplitold:{
 	  		id: 'cartbuildingsplitold',
 	  		rid: '849d356b-e4a1-46e2-9ae1-1b4e0a8f21dc',
@@ -255,6 +256,7 @@ var reportList =
 	  		refresh: 60,
 	  		navBar: false
 	  	}
+*/
 	  },
 	  eodrecon: {
 	  sapeodrecon:{
