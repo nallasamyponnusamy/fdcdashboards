@@ -178,6 +178,22 @@ var reportList =
 	  		name: 'Ops Center',
 	  		refresh: 90,
 	  		navBar: false
+	  	},
+	   	deliverymanagement:{
+	  		id: 'deliverymanagement',
+	  		rid: '0a069eea-453a-4fba-8ea2-57e53b32b8d4',
+	  		gid: 'b1717488-1ca0-4f42-8da3-1fc7c1363833',
+	  		name: 'Delivery Management',
+	  		refresh: 90,
+	  		navBar: false
+	  	},
+	   	expectedreturn:{
+	  		id: 'expectedreturn',
+	  		rid: '22154c48-6641-4b1c-9c67-567ca829270e',
+	  		gid: 'b1717488-1ca0-4f42-8da3-1fc7c1363833',
+	  		name: 'Expected Return',
+	  		refresh: 90,
+	  		navBar: false
 	  	}
 	  },
 	transportationdss: {
