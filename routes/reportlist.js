@@ -179,6 +179,7 @@ var reportList =
 	  		refresh: 90,
 	  		navBar: false
 	  	},
+	  	/* Added by ponnu for Delivery management dashboard */
 	   	deliverymanagement:{
 	  		id: 'deliverymanagement',
 	  		rid: '0a069eea-453a-4fba-8ea2-57e53b32b8d4',
@@ -194,6 +195,7 @@ var reportList =
 	  		name: 'Expected Return',
 	  		refresh: 90,
 	  		navBar: false
+        /*End of addtion by Ponnu for Delivery Management and Expected return*/	  		
 	  	}
 	  },
 	transportationdss: {
@@ -300,6 +302,18 @@ var reportList =
 	  		navBar: true
 	  	}
 	  },
+	  /* Added by ponnu for Pre-Pack */
+	  prepack: {
+	    prepack:{
+	  		id: 'prepack',
+	  		rid: '3542e3e4-2196-44ff-a90e-e569220b54ad',
+	  		gid: 'b1717488-1ca0-4f42-8da3-1fc7c1363833',
+	  		name: 'Pre-Pack Dashboard',
+	  		refresh: 90,
+	  		navBar: false
+	  	}
+	  },
+     /* Added by ponnu for Pre-Pack */
 	  postwavemonitor: {
 	  	postwavemonitor:{
 	  		id: 'postwavemonitor',
