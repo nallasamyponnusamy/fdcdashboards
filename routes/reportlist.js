@@ -310,7 +310,7 @@ var reportList =
 	  		gid: 'b1717488-1ca0-4f42-8da3-1fc7c1363833',
 	  		name: 'Pre-Pack Dashboard',
 	  		refresh: 90,
-	  		navBar: false
+	  		navBar: true
 	  	}
 	  },
      /* Added by ponnu for Pre-Pack */
